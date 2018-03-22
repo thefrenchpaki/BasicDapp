@@ -11,7 +11,7 @@ Template.hello.onCreated(function helloOnCreated() {
 Template.hello.helpers({
   counter() {
     var template = Template.instance();
-    web3.eth.getBalance("0xbb4a8f07bEc96FA45687efDb6E07CDaD5Dd5824C",
+    web3.eth.getBalance("YOUR METAMASK WALLET ADDRESS",
               function (err, res){
                 TemplateVar.set(template, "counter", res);
               })
